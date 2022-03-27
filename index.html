@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MScEng from Sweden" />
+    <title>Christian Bilevits</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet" />
+    <style>
+        :root {
+            --bg-color: #fafafa;
+            --text-color: #262626;
+            --secondary-text-color: #4d4d4d;
+            --highlight-color: #e90000;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #2a2e31;
+                --text-color: #d3d2d2;
+                --secondary-text-color: #bdbcbc;
+                --highlight-color: #f86363;
+            }
+
+            img {
+                opacity: 0.8;
+                transition: opacity 0.3s;
+            }
+
+            img:hover {
+                opacity: 1;
+            }
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Fira Mono", Menlo, monospace;
+            padding: 0 20px;
+        }
+
+        header {
+            text-align: center;
+            padding-top: 3%;
+            margin: 0 auto 15px;
+        }
+
+        header img {
+            max-width: 180px;
+            border-radius: 50%;
+        }
+
+        header,
+        main {
+            max-width: 700px;
+        }
+
+        main {
+            margin: 0 auto 15px;
+            line-height: 1.4;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        header span {
+            color: var(--secondary-text-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--highlight-color);
+            padding: 3px;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            background: var(--highlight-color);
+            color: var(--bg-color);
+        }
+
+        a:active {
+            background: var(--text-color);
+        }
+
+        #links span::before {
+            content: "// ";
+        }
+
+        @media screen and (max-width: 550px) {
+            #links span {
+                display: block;
+                margin: 0.6em 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./profile.jpeg" alt="Profile picture of Christian Bilevits." />
+        <h1>Christian Bilevits</h1>
+        <span>
+            MScEng. Information and Communication Engineering Technologies at Lund
+            University.
+        </span>
+    </header>
+    <main>
+        <p>
+            Working full time as a Cloud Software Engineer at IKEA Home Smart, IKEA
+            of Sweden AB.
+        </p>
+
+        <p>My focus and love goes towards software and security engineering.</p>
+
+        <p>Contact <a href="mailto:christian@bilevits.com">me</a> or read my <a href="./resume.pdf">résumé.</a></p>
+
+        <section id="links">
+            <span><a href="https://github.com/chrillebile">github</a></span>
+            <span><a href="https://www.linkedin.com/in/christianbilevits/">linkedin</a>
+        </section>
+    </main>
+</body>
+
+</html>
