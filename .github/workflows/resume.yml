@@ -18,7 +18,7 @@ jobs:
         with:
           root_file: resume.tex
       - name: Update PDF
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           add: "resume.pdf"
           message: "Update pdf according to latex changes"
